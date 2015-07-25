@@ -9,7 +9,6 @@ var config = {
       name: 'webrtc'
     },
     port: 3000,
-    db: 'mysql://localhost/webrtc-development'
   },
 
   test: {
@@ -18,7 +17,6 @@ var config = {
       name: 'webrtc'
     },
     port: 3000,
-    db: 'mysql://localhost/webrtc-test'
   },
 
   production: {
@@ -27,7 +25,6 @@ var config = {
       name: 'webrtc'
     },
     port: 3000,
-    db: 'mysql://localhost/webrtc-production'
   }
 };
 
