@@ -1,6 +1,12 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
-  p #{articles}
+	div.toolbar
+		input(id='activateBtn' type='button' value='Activate')
+		input.hidden(id='stopBtn' type='button' value='Stop')
+		label.right 
+			span Session: 
+			span.bold#activeLbl
+	video
+
+

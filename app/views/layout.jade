@@ -6,8 +6,16 @@ html(lang='en')
     title= title
     block css
       link(rel='stylesheet', href='/css/style.css')
+    
+  body
+    header
+      h1= title
+    main
+      block content
+
     block js
+      script(src='/components/apollo.js/dist/apollo.min.js')
+      script(src='/components/webrtc-adapter/adapter.js')
+      script(src='/js/rtc.js')
       if ENV_DEVELOPMENT
         script(src='http://localhost:35729/livereload.js')
-  body
-    block content
